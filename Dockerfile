@@ -36,8 +36,8 @@ RUN useradd -m myuser
 USER myuser
 
 # Specify the port FastAPI will listen on
-EXPOSE 8000
+EXPOSE 8080
 
 # Define the default command to run the application
-# CMD ["/start.sh"]
-ENTRYPOINT [ "/start.sh" ]
+CMD ["/start.sh"]
+# ENTRYPOINT [ "executable" ]
